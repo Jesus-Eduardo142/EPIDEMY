@@ -1,0 +1,471 @@
+<!-- <div class="container"> -->
+<!-- <div> -->
+<!--
+  <form class="needs-validation" #updateUserForm="ngForm" (ngSubmit)="addBranch(updateUserForm)">
+  -->
+
+<!--
+      <div class="row">
+      -->
+
+
+
+
+
+<div> 
+       
+    <div class="row">
+
+
+        <div class="col-sm-2">
+      <div class="product-detail">
+        <!--
+        <h5 class="product-head">Entidad</h5>-->
+       
+        
+    <table class="table" cellspacing="0" style="max-height: 28px">
+          <tbody>
+             <tr>
+               <td>
+                  <div class="form-group">
+                      <label for="brand_select">Semana:</label>
+                      <select class="form-control" name="semana" id="semana" [(ngModel)]="semana">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                        <option value="51">51</option>
+                        <option value="52">52</option>
+                        <option value="53">53</option>
+                      </select>
+                    </div>
+               </td>
+              </tr>
+            <tr>
+               <td>
+              <div class="form-group">
+                  <label for="nss">NSS </label>
+                  <input type="text" class="form-control" id="nss" name="nss"  placeholder="NSS" [(ngModel)]="nss" value="" required>
+                  <div class="invalid-feedback">
+                      Valid last name is required.
+                  </div>
+              </div>
+              </td>
+            </tr>
+            <tr>
+                <!-- <th scope="row"></th> -->
+                 <td><div class="mb-1">
+                     <button class="btn btn-primary btn-lg btn-block" type="button" (click)="this.searchPregnant();">Buscar</button>
+
+                 </div></td>
+             </tr>
+        
+
+            <tr>
+              <td> 
+                
+                  <div class="form-group">
+                      <label for="brand_select">Entidad :</label>
+                      <select class="form-control" name="" id="entidad_select" [(ngModel)]="selectedEntidad" (change)="selectEntidad();">
+                        <option *ngFor="let brand of entidadesOnMap" [ngValue]="brand.cve_ent">{{brand.entidad}}</option>
+                      </select>
+                    </div>
+              </td>
+            </tr>
+
+            <tr>
+                <td> 
+                  
+                    <div class="form-group">
+                        <label for="brand_select">Municipio :</label>
+                        <select class="form-control" name="" id="municipio_select" [(ngModel)]="selectedMunicipio" (change)="selectMunicipio();">
+                          <option *ngFor="let brand of municipiosOnMap" [ngValue]="brand.cve_mun">{{brand.municipio}}</option>
+                        </select>
+                      </div>
+                </td>
+              </tr>
+           
+
+             <tr>
+               <td>
+               
+   
+             <tr>
+              <td> 
+                
+                 
+        
+              </td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+
+<!--           
+            <tr>
+              <th scope="row">Direccion</th>
+              <td><div class="mb-1">
+                  <input type="text" class="form-control" 
+                  id="address" [(ngModel)]="branchoffice.address" 
+                  name="address" placeholder="Dirección"
+                    required>
+              </div></td>
+            </tr>
+          -->
+
+                  <tr>
+                     <!-- <th scope="row"></th> -->
+                      <td><div class="mb-1">
+                          <button class="btn btn-primary btn-lg btn-block" type="button" (click)="this.setMap(true);">Ver Mapa</button>
+
+                      </div></td>
+                  </tr>
+                  
+                  <tr>
+                    <!-- <th scope="row"></th> -->
+                     <td><div class="mb-1">
+                         <button class="btn btn-primary btn-lg btn-block" type="button" (click)="this.setMap(false);">Ver Detalle</button>
+
+                     </div></td>
+                 </tr>
+
+          </tbody>
+        </table>
+
+        <p>
+         <!-- Lat: {{ mylat }} Lng: {{ mylng }} -->
+        </p>
+        <br><br><br><br><br><br><br><br><br><br><br>
+      </div>
+    
+    </div>
+
+  
+
+    <div class="col-sm-10" *ngIf="this.isMap()==true">
+      <!--
+      <div class="form-group">
+        <input placeholder="search for location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #search [formControl]="searchControl">
+      </div>
+    -->
+      <agm-map 
+        [latitude]="lat" 
+        [longitude]="lng" 
+        [zoom]="myzoom"
+        [mapTypeId]="mapType"
+        (mapReady)="mapReady($event)"
+        (mapClick)="addMarker($event.coords.lat, $event.coords.lng)">
+
+      <agm-marker
+        *ngFor="let marker of pregnat"
+        [latitude]="marker.latitud"
+        [longitude]="marker.longitud"
+        [iconUrl]="'https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|00FF00'"
+
+        [opacity]="marker.alpha"
+        [markerDraggable]="true"
+        (markerClick)="selectMarker($event)">
+      </agm-marker>
+
+      <agm-marker
+        *ngFor="let marker of markers"
+        [latitude]="marker.latitud"
+        [longitude]="marker.longitud"
+        [label]="marker.ssn11"
+
+        [opacity]="marker.alpha"
+        [markerDraggable]="true"
+        (markerClick)="selectMarker($event)">
+      </agm-marker>
+
+        <!--   
+      
+      <agm-rectangle
+        [north]="max('lat')"
+        [east]="max('lng')"
+        [south]="min('lat')"
+        [west]="min('lng')">
+      </agm-rectangle>
+        <agm-polygon
+        [geodesic]="true"
+        [strokeColor]=""
+        [strokeOpacity]="0.3"
+        [fillOpacity]="0.0"
+        [strokeWeight]="3">
+     
+        [paths]="markersOnMap">
+            <agm-marker
+                [label]="labelOptions"
+
+                *ngFor="let marker of markersOnMap; index as i"
+                [latitude]="marker.lat" 
+                [longitude]="marker.lng"
+                [label]="marker.pos"
+                [iconUrl]="marker.image_url"> 
+
+                <agm-info-window
+                    [maxWidth]="150">
+                    <div class="container">
+                        <p class="font-weight-bold">
+                            {{marker.name}}
+                        </p>
+                        <img 
+                            src="{{marker.image_url}}" 
+                            class="img-thumbnail"
+                            *ngIf="marker.image_url.length > 5">
+                    </div>
+                </agm-info-window>
+            </agm-marker>
+          
+    </agm-polygon>
+  -->
+
+      </agm-map>
+
+
+   </div>
+
+
+   <div class="col-sm-10" *ngIf="this.isMap()==false">
+   
+   <!--
+   <table border="1">
+    <tr>
+      <th></th>
+      <th>Habitadas</th>
+      <th>Con computadora</th>
+      <th>Con acceso a internet</th>
+    </tr>
+
+    <tr>
+      <td>
+        Internet : 
+      </td>
+
+      <td>
+           {{ internet.habitadas }}
+         </td>
+           <td>
+             {{ internet.viviendas_con_computadora }}
+           </td>
+           <td>
+             {{ internet.viviendas_acceso_internet }}
+           </td>
+         </tr>
+    </table>
+ <br>
+
+ <table border="1">
+  <tr>
+    <th></th>
+    <th>
+      Promedio_escolaridad 
+    </th>
+      <th>
+        Escolaridad_esperada 
+      </th>
+      <th>
+        Ipc_Usd 
+      </th>
+ 
+     <th>
+        Mortalidad_infantil 
+     </th>
+     
+     <th>
+         Indice_educacion 
+     </th>
+     
+     <th>
+         Indice_ingreso 
+     </th>
+
+     <th>
+       Indice_salud 
+   </th>
+   
+   <th>
+       Idh 
+   </th>
+
+  </tr>
+
+  <tr>
+    <td>
+      IDH : 
+    </td>
+
+    <td>
+         {{ idh.promedio_escolaridad }}
+       </td>
+         <td>
+           {{ idh.escolaridad_esperada }}
+         </td>
+         <td>
+           {{ idh.ipc_usd }}
+         </td>
+    
+        <td>
+          {{ idh.mortalidad_infantil }}
+        </td>
+        
+        <td>
+            {{ idh.indice_educacion }}
+        </td>
+        
+        <td>
+            {{ idh.indice_ingreso }}
+        </td>
+
+        <td>
+          {{ idh.indice_salud }}
+      </td>
+      
+      <td>
+          {{ idh.idh }}
+      </td>
+     
+    </tr>
+  </table>
+<br>
+-->
+   <table border="1">
+   
+   <tr *ngFor="let list of markers; let i = index">
+        <td>
+          {{ i+1 }}
+        </td>
+        <td>
+          {{ list.ide_nom }}
+        </td>
+          <td>
+            {{ list.ide_ape_pat }}
+          </td>
+          <td>
+            {{ list.ide_ape_mat }}
+          </td>
+        </tr>
+     </table>
+  
+
+  <br>
+<!--
+  <table border="1">
+    <tr>
+      <th></th>
+      <th>
+        Municipio 
+      </th>
+        <th>
+          actividad_economica 
+        </th>
+        <th>
+          UE 
+        </th>
+   
+       <th>
+          H001A
+       </th>
+       
+       <th>
+          H010a 
+       </th>
+       
+       <th>
+        A111A
+       </th>
+  
+       <th>
+        a211a 
+     </th>
+     
+    
+    
+    </tr>
+  
+  <tr *ngFor="let list of censos; let i = index">
+       <td>
+         {{ i+1 }}
+       </td>
+       <td>
+         {{ list.municipio }}
+       </td>
+         <td>
+           {{ list.actividad_economica }}
+         </td>
+         <td>
+           {{ list.ue }}
+         </td>
+         <td>
+          {{ list.h001a }}
+        </td>
+        <td>
+          {{ list.h010a }}
+        </td>
+        <td>
+          {{ list.a111a }}
+        </td>
+        <td>
+          {{ list.a211a }}
+        </td>
+        
+       </tr>
+    </table>
+  -->
+  </div>
+
+</div>
+</div>

@@ -1,0 +1,12 @@
+<br>
+<!-- go to map <button type="button" class="btn btn-primary" [routerLink]="['/branches/addbranch']"><h5>New Client</h5></button>-->
+
+<button type="button" class="btn btn-primary" [routerLink]="['/grecord/addRecord']"><h5>Nuevo Paciente</h5></button>
+<br>
+<ag-grid-angular 
+	style="width: 1255px; height: 500px; margin-left: 20px;" 
+	class="ag-theme-balham"
+	[rowData]="rowData" 
+	[columnDefs]="columnDefs"
+	rowSelection="multiple">
+</ag-grid-angular> 

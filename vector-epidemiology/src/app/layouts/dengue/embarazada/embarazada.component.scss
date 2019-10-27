@@ -1,0 +1,127 @@
+
+.panel.with-nav-tabs .panel-heading{
+    padding: 5px 5px 0 5px;
+  }
+  .panel.with-nav-tabs .nav-tabs{
+  border-bottom: none;
+  }
+  .panel.with-nav-tabs .nav-justified{
+  margin-bottom: -1px;
+  }
+  /********************************************************************/
+  /*** PANEL PRIMARY ***/
+  .with-nav-tabs.panel-primary .nav-tabs > li > a,
+  .with-nav-tabs.panel-primary .nav-tabs > li > a:hover,
+  .with-nav-tabs.panel-primary .nav-tabs > li > a:focus {
+  color: #fff;
+  padding: 2em;
+  }
+  .with-nav-tabs.panel-primary .nav-tabs > .open > a,
+  .with-nav-tabs.panel-primary .nav-tabs > .open > a:hover,
+  .with-nav-tabs.panel-primary .nav-tabs > .open > a:focus,
+  .with-nav-tabs.panel-primary .nav-tabs > li > a:hover,
+  .with-nav-tabs.panel-primary .nav-tabs > li > a:focus {
+  color: #428bca;
+  background-color: #fff;
+  border-color: transparent;
+  }
+  .with-nav-tabs.panel-primary .nav-tabs > li.active > a,
+  .with-nav-tabs.panel-primary .nav-tabs > li.active > a:hover,
+  .with-nav-tabs.panel-primary .nav-tabs > li.active > a:focus {
+  color: #428bca;
+  background-color: #fff;
+  border-color: #428bca;
+  border-bottom-color: transparent;
+  }
+  .with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu {
+    background-color: #fff;
+    border-color: #3071a9;
+  }
+  .with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > li > a {
+    color: #428bca;   
+  }
+  .with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+  .with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+    background-color: #3071a9;
+  }
+  .with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+  .with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+  .with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+    background-color: #4a9fe9;
+  }
+  
+  .panel{
+    border: transparent;
+  }
+  
+  li{
+    font-size: 15px;
+  }
+  
+  mat-card-title{
+    font-size: 15px;
+  }
+  
+  label{
+    font-size: 15px;
+  }
+  
+  .btn{
+    border-radius: 12px;
+    font-size: 15px;
+  }
+  
+  button{
+    border: transparent;
+    font-size: 15px;
+    background: #fff;
+    color: #3071a9;
+  
+  }
+  
+  .modal-header-success {
+    color:#fff;
+    padding:9px 15px;
+    margin-bottom: 20px;
+    border-bottom:1px solid #eee;
+    background-color: #165B77;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+  }
+  
+  
+  #exTab1 .nav-pills > li > a {
+    border-radius: 0;
+  }
+  
+  /* change border radius for the tab , apply corners on top*/
+  
+  #exTab3 .nav-pills > li > a {
+    border-radius: 4px 4px 0 0 ;
+  }
+  
+  #exTab3 .tab-content {
+    //color : white;
+    //background-color: #428bca;
+    padding : 5px 15px;
+  }
+  
+  .ag-scrolls {
+    height: auto !important;
+  }
+  
+  .modal {
+      display: none;
+      height: 100%;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+  }
+  .modal.open {
+     display: block;
+  }

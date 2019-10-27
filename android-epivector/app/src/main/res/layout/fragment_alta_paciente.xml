@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/id_fragment_registro"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+
+        <fragment
+            android:id="@+id/fragment_registro_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/user"
+                />
+
+
+            <EditText
+
+                android:id="@+id/edtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Nombre completo"
+                android:textColor="#575756"
+                android:textSize="12dp"
+                android:textAppearance="@android:style/TextAppearance.Widget.Button"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/home"
+                android:layout_marginRight="5dp"
+                />
+
+
+            <EditText
+
+                android:id="@+id/edtDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Dirección"
+                android:textColor="#575756"
+                android:textSize="12dp"
+                android:textAppearance="@android:style/TextAppearance.Widget.Button"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btnCancelDialog"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textColor="@color/colorWhithe"
+                android:background="@drawable/btn_cancel"
+                android:textAppearance="@android:style/TextAppearance.Widget.Button"
+                android:text="Cancelar"
+
+                />
+
+            <View
+
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                />
+
+
+            <Button
+                android:id="@+id/btnAceptarDialog"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhithe"
+                android:padding="16dp"
+                android:background="@drawable/btn_acept"
+                android:textAppearance="@android:style/TextAppearance.Widget.Button"
+                android:text="Guardar"/>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

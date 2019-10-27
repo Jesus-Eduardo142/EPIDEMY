@@ -1,0 +1,133 @@
+<br>
+<div class="container">
+    <div class="row" >
+        <div class="col-sm">
+            <div class="float-right">
+         
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="brand_select"> Medicos :</label>
+                <select class="form-control" name="" id="brand_select" >
+          <option ></option>
+        </select>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">medico 1</li>
+                <li class="list-group-item">medico 2</li>
+                <li class="list-group-item">medico 3</li>
+            </ul>
+    </div>
+    <div class="col-md-9">
+
+        <div class="container">
+            <div class="row" *ngIf="!loading">
+                <!-- List of Products -->
+                <div class="col-sm-4 mb-2">
+                    <div class="item">
+                        <div class=" mb-r">
+                            <div class="card card-cascade wider">
+                                
+                                    <div class="view overlay hm-white-slight">
+                                        <img  class="img-fluid" alt="" width="360px" height="640px">
+                                        <a>
+                                            <div class="mask waves-effect waves-light" mdbRippleRadius></div>
+                                        </a>
+                                    </div>
+                                <div class="card-body text-center no-padding">
+                                    <a class="text-muted">
+
+                                    </a>
+                                    <p class="card-title">
+
+                                    </p>
+
+                                    <div class="card-footer">
+                        
+                                        <span class="right">
+                      
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-3">
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<div class="col-sm-12">
+    <div class="product-detail">
+        <form class="needs-validation">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="IdMedico">Id Medico</label>
+                    <input type="text" class="form-control" id="IdMedico" name="IdMedico" placeholder="Id Medico" value="" required>
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="NombreMed">Nombre Medico</label>
+                    <input type="text" class="form-control" id="NombreMe" name="NombreMe" placeholder="nombre medico" value="" required>
+                    <div class="invalid-feedback">
+                        Valid last name is required.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 mb-3">
+                <label for="Apellidopa">Apellido Paterno </label>
+                <input type="text" class="form-control" id="Apellidopa" name="Apellidopa"  placeholder="Apellido Paterno" value="" required>
+                <div class="invalid-feedback">
+                    Valid last name is required.
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <label for="ApellidoMa">Apellido Materno </label>
+                <input type="text" class="form-control" id="ApellidoMa" name="ApellidoMa"  placeholder="Apellido Materno" value="" required>
+                <div class="invalid-feedback">
+                    Valid last name is required.
+                </div>
+            </div>
+
+
+
+            <div class="col-md-6 mb-3">
+                <label for="Unidad">Unidad Medica  </label>
+                <select name="Unidad Medica">
+
+                        <option>Unidad Medica Familiar 5</option>
+                        
+                        <option>Unidad Medica Familiar 4</option>
+                        
+                        <option>Unidad Medica Familiar 3</option>
+                        
+                        </select>
+            </div>
+
+
+
+
+
+            <hr class="mb-4">
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Add Medico</button>
+        </form>
+    </div>
+</div>
